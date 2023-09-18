@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+ 
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*box-sizing property allows to include the padding and boeder in elements total with and height*/
+}
+body{
+    background-color: none;
+    min-height: 100vh;
+    display: flex; 
+    align-items: center;  /*use to take items in center */
+    font-size: 15px;
+    font-family: "Lexend Deca",sans-serif;
+    font-size: 400; 
+    border: 1px;
+}
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+    border: 1px solid 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* box-shadow use for a shadow around the box*/
+    
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*grid-template-columns use to divide ito three columns repeat use for shorthand*/
+    border-top: 30px;
+    margin: 10px;
+}
+.col_1{
+    background-color: hsl(31, 77%, 52%);
+}
+.col_2{
+    background-color:hsl(184, 100%, 22%);
+}
+.col_3{
+    background-color: hsl(179, 100%, 13%);
+}
+.col{
+    padding: 20px;
+   
+}
+h1{
+    color: hsl(0, 0%, 95%);
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: "Big shoulders Display",sans-serif;
+    position: relative;
+    left: 20px;
+}
+/* IMAGES */
+img{
+    position: relative; /*work according to parent element*/
+    left: 20px;
+}
+.col p{
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.4;
+    padding: 20px;
+}
+/* BUTTON */
+.btn{
+    background-color:hsl(0, 0%, 95%);
+    margin-top: 60px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 12px 20px;
+    border: 1px solid hsl(0, 0%, 95%);
+    position: relative;
+    bottom:30px;
+    left:20px;
+
+} 
+.col_1 .btn{
+    color: hsl(31, 77%, 52%);
+}
+.col_2 .btn{
+    color:hsl(184, 100%, 22%);
+}
+.col_3 .btn{
+    color: hsl(179, 100%, 13%);
+}
+.btn:hover{
+    background: transparent;
+    color: white;
+}
+@media (main-width: 600px) {
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+
+    }
+}
